@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "aideploy"
@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Ephemeral AWS deployment CLI for FastAPI portfolio projects"
 readme = "README.md"
 license = { text = "MIT" }
-requires-python = ">=3.12"
+requires-python = ">=3.9"
 authors = [{ name = "AIDeploy" }]
 keywords = ["aws", "fastapi", "deployment", "cli", "devops"]
 classifiers = [
