@@ -1,0 +1,148 @@
+### === SECRETS / CREDENTIALS (CRITICAL — GitHub App keys, API keys) === ###
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+github-app-private-key*.pem
+secrets/
+credentials/
+
+### === Python === ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+### === Virtual Environments === ###
+venv/
+env/
+ENV/
+.venv/
+.env/
+env.bak/
+venv.bak/
+
+### === FastAPI / Uvicorn === ###
+*.log
+logs/
+
+### === Testing / Coverage === ###
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+### === Type Checking / Linting Caches === ###
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pyre/
+.pytype/
+
+### === Jupyter Notebooks (if used for prototyping RAG/embeddings) === ###
+.ipynb_checkpoints/
+*.ipynb
+
+### === Vector DB / Qdrant local data === ###
+qdrant_storage/
+qdrant_data/
+*.qdrant
+storage/
+
+### === LangChain / LLM cache & local artifacts === ###
+.langchain.db
+langchain_cache/
+.cache/
+*.faiss
+*.index
+
+### === Local databases (if using SQLite for review history, etc.) === ###
+*.db
+*.sqlite
+*.sqlite3
+
+### === Cloned/indexed repos (if codebase.py clones repos locally for indexing) === ###
+cloned_repos/
+tmp_repos/
+repo_cache/
+
+### === Docker === ###
+*.pid
+docker-compose.override.yml
+
+### === OS-specific junk === ###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+### === Editor / IDE === ###
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+### === Environment / dependency management === ###
+Pipfile.lock
+poetry.lock
+uv.lock
+.python-version
+
+### === Node (only if you add a frontend/dashboard later) === ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+### === Build / Deployment artifacts === ###
+*.tar.gz
+*.zip
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+### === Smee.io / webhook tunnel configs (dev only) === ###
+.smee
+
+### === Misc local scratch files === ###
+scratch/
+notes.md
+TODO.local.md
+
+### test scripts
+parse_test.py
